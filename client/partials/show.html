@@ -1,0 +1,30 @@
+<a href="#/dashboard">Go to Polls</a>
+<h3>{{survey[0].question}}</h3>
+<p>Click the Vote button to choose one.</p>
+<table>
+  <tr>
+    <th>Option</th>
+    <th>Current Count of Votes</th>
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <td>{{survey[0].option1.description}}</td>
+    <td>{{survey[0].option1.vote}}</td>
+    <td>VOTE</td>
+  </tr>
+  <tr>
+    <td>{{survey[0].option2.description}}</td>
+    <td>{{survey[0].option2.vote}}</td>
+    <td>VOTE</td>
+  </tr>
+  <tr>
+    <td>{{survey[0].option3.description}}</td>
+    <td>{{survey[0].option3.vote}}</td>
+    <td>VOTE</td>
+  </tr>
+  <tr>
+    <td>{{survey[0].option4.description}}</td>
+    <td>{{survey[0].option4.vote}}</td>
+    <td>VOTE</td>
+  </tr>
+</table>

@@ -1,0 +1,22 @@
+<div>
+  <a href="#/create">Create a New Poll</a>
+  <a href="#/">Logout</a>
+</div>
+<div>
+  <h4>Current Polls:</h4>
+  <table>
+    <tr>
+      <th>Name |</th>
+      <th> Survey Question |</th>
+      <th> Date Posted |</th>
+      <th> Action</th>
+    </tr>
+    <tr ng-repeat="survey in surveys">
+      <td>{{survey.username}}</td>
+      <td><a href="#/poll/{{survey._id}}">{{survey.question}}</a></td>
+      <td>{{survey.createdAt}}</td>
+      <td>DELETE</td>
+    </tr>
+  </table>
+
+</div>

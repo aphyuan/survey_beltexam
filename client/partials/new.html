@@ -1,0 +1,13 @@
+<h3>Put the questions and options here:</h3>
+<a href="#/dashboard">Cancel</a>
+<p>
+  hello, {{username}}
+</p>
+<form ng-submit="submitForm()">
+  Question: <input type="text" ng-model="survey.question"> <br>
+  Option 1: <input type="text" ng-model="survey.option1.description" ng-init="survey.option1.vote=0"> <br>
+  Option 2: <input type="text" ng-model="survey.option2.description" ng-init="survey.option2.vote=0"> <br>
+  Option 3: <input type="text" ng-model="survey.option3.description" ng-init="survey.option3.vote=0"> <br>
+  Option 4: <input type="text" ng-model="survey.option4.description" ng-init="survey.option4.vote=0"> <br>
+  <input type="submit" value="Create Poll" />
+</form>
